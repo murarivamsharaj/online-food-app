@@ -123,7 +123,7 @@ const App: React.FC = () => {
           <h2>Your Order</h2>
           <button className="close-btn" onClick={() => setIsCartOpen(false)}>✕</button>
         </div>
-        
+
         <div className="cart-items">
           {cart.length === 0 ? (
             <p className="empty-cart">Your cart is empty.</p>
@@ -148,7 +148,7 @@ const App: React.FC = () => {
           </div>
         )}
       </div>
-      
+
       {/* Overlay for Cart */}
       {isCartOpen && <div className="overlay" onClick={() => setIsCartOpen(false)}></div>}
     </div>
